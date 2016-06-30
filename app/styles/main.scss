@@ -11,6 +11,12 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
+$offwhite = rgba(244,244,244,0) // FEFEFE
+$yellow   = rgba(252,22,47);    // #FCDC2F
+$orange   = rgba(252,114,41)    // #FC7229
+$red      = rgba(252,79,59)     // #FC4F3B
+$darkgrey = rgba(48,46,47)      // #302E2F
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
