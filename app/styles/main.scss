@@ -12,16 +12,29 @@ $icon-font-path: '../fonts/';
 }
 
 .roboto {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.r-black {
-  @extend .roboto;
-  font-weight: 900;
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.bold {
+  font-width: 700;
 }
 
 .r-bold {
-  font-weight: 900;
+  @extend .roboto;
+  @extend .bold;
+}
+
+.rm-bold {
+  @extend .roboto-mono;
+  @extend .bold;
+}
+
+.logo {
+  @extend ;
 }
 
 //          rgb                   808movie  808.html909   codepen
