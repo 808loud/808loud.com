@@ -10,12 +10,12 @@ $icon-font-path: '../fonts/';
   color: #000;
   padding: 0.2em 0;
 }
-
-$offwhite = rgba(244,244,244,0) // FEFEFE
-$yellow   = rgba(252,22,47);    // #FCDC2F
-$orange   = rgba(252,114,41)    // #FC7229
-$red      = rgba(252,79,59)     // #FC4F3B
-$darkgrey = rgba(48,46,47)      // #302E2F
+//          rgb                  s808movie  808.html909   codepen
+$red      = rgba(252,79,59,0)   // FC4F3B    // ed400b // FD4D20
+$orange   = rgba(252,114,41,0)  // FC7229    // FF9600 // FE7F00
+$yellow   = rgba(252,22,47,0);  // FCDC2F    // FFE800 // FAEF1B
+$offwhite = rgba(244,244,244,0) // FEFEFE    // FFFBEB // F4F4D1
+$darkgrey = rgba(48,46,47,0)    // 302E2F    // 353535 // 34302F
 
 /* Space out content a bit */
 body {
