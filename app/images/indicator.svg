@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="110px" height="211px" viewBox="0 0 110 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>indicator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill="#302E2F">
+            <g id="indicator">
+                <path d="M0,0 L110,0 L110,57 L0,57 L0,0 Z M55.5,44 C63.5081289,44 70,37.5081289 70,29.5 C70,21.4918711 63.5081289,15 55.5,15 C47.4918711,15 41,21.4918711 41,29.5 C41,37.5081289 47.4918711,44 55.5,44 Z" id="Combined-Shape"></path>
+                <rect id="Rectangle-6" x="0" y="60" width="110" height="151"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
