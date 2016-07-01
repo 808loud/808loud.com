@@ -2,17 +2,8 @@
   "name": "808loud-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
-  },
+    "bootstrap": "v4.0.0-alpha.2"
+  }
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
