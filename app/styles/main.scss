@@ -1,7 +1,7 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .browserupgrade {
@@ -12,115 +12,39 @@ $icon-font-path: '../fonts/';
 }
 
 .roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
 .roboto-mono {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .bold {
-  font-width: 700;
-}
-
-.r-bold {
-  @extend .roboto;
-  @extend .bold;
-}
-
-.rm-bold {
-  @extend .roboto-mono;
-  @extend .bold;
-}
-
-.logo {
-  @extend ;
+  font-weight: 700;
 }
 
 //          rgb                   808movie  808.html909   codepen
-$red:      rgba(252,79,59,0);   // FC4F3B    // ed400b // FD4D20
-$orange:   rgba(252,114,41,0);  // FC7229    // FF9600 // FE7F00
-$yellow:   rgba(252,22,47,0);   // FCDC2F    // FFE800 // FAEF1B
-$offwhite: rgba(244,244,244,0); // FEFEFE    // FFFBEB // F4F4D1
-$darkgrey: rgba(48,46,47,0);    // 302E2F    // 353535 // 34302F
+$red:      rgba(252,79,59,1);   // FC4F3B    // ed400b // FD4D20
+$orange:   rgba(252,114,41,1);  // FC7229    // FF9600 // FE7F00
+$yellow:   rgba(252,22,47,1);   // FCDC2F    // FFE800 // FAEF1B
+$offwhite: rgba(244,244,244,1); // FEFEFE    // FFFBEB // F4F4D1
+$darkgrey: rgba(48,46,47,1);    // 302E2F    // 353535 // 34302F
 
-/* Space out content a bit */
+.red      { color: $red; }
+.orange   { color: $orange; }
+.yellow   { color: $yellow; }
+.offwhite { color: $offwhite; }
+.darkgrey { color: $darkgrey; }
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: $darkgrey;
+  color: $offwhite;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.unstyled-list {
+  list-style-type: none;
 }

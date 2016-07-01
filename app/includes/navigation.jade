@@ -1,0 +1,28 @@
+//- includes/navigation.jade
+nav
+  ul.list-inline.text-center.roboto-mono.bold
+    li
+      a.btn.btn-primary.text-uppercase.mobile-show(href='#', role='button') 808 Loud
+    li.visible-xs-inline-block
+      a.btn.mobile-show.toggle(role='button')
+        span.icon-hamburger
+          svg(xmlns='http://www.w3.org/2000/svg', width='16px', height='16px', viewbox='0 0 64 64')
+            g.icon
+              rect(x='0', y='0', width='64', height='12')
+              rect(x='0', y='26', width='64', height='12')
+              rect(x='0', y='52', width='64', height='12')
+        span.icon-close.hidden
+          svg(xmlns='http://www.w3.org/2000/svg', width='16px', height='16px', viewbox='0 0 64 64')
+            g.icon
+              rect(transform='rotate( 45 32 32)', x='-11', y='26', width='86', height='12')
+              rect(transform='rotate(-45 32 32)', x='-11', y='26', width='86', height='12')
+    li.clearfix.visible-xs-block
+    li
+      a.btn(href='#about', role='button') About
+    li
+      a.btn(href='#work', role='button') Work
+    li.clearfix.visible-xs-block
+    li
+      a.btn(href='#contact', role='button') Contact
+    li
+      a.btun(href='#808' role='button') Get loud
