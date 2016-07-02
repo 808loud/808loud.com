@@ -18,13 +18,21 @@ $darkgrey: rgba(48,46,47,1);    // 302E2F    // 353535 // 34302F
 .darkgrey { color: $darkgrey; }
 
 
-.svg-bg {
+.svg-fill {
   fill: $offwhite;
 }
 
-.svg-fill {
-  fill: $orange;
+.logo {
+
+  svg {
+    background-color: $orange;
+    opacity: 1;
+  }
+  .svg-fill {
+    fill: $offwhite;
+  }
 }
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -50,10 +58,42 @@ body {
   color: $offwhite;
 }
 
-.text-uppercase {
-  text-transform: uppercase;
+.nav-main {
+  position: fixed;
+  right: 1em;
+  white-space: nowrap;
+  z-index: 30;
 }
 
-.unstyled-list {
-  list-style-type: none;
-}
+@media screen and (max-width:767px) {
+  .nav-main {
+    nav {
+      ul li a {
+        /* animate movement */
+        position: relative;
+        right: -15px; // half button width
+        visibility: hidden;
+        opacity: 0;
+        z-index: 35;
+        &.mobile-show {
+          top: 0;
+          visibility: visible;
+          opacity: 1;
+          z-index: 50;
+        }
+      }
+      /* The "expanded" class is added to
+         the nav element with jQuery on click */
+      &.expanded li a {
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition:
+          visibility 0.4s ease,
+          opacity 0.4s ease;
+        transition:
+          visibility 0.4s ease,
+          opacity 0.4s ease;
+      }
+    }
+  }
