@@ -1,10 +1,9 @@
 $icon-font-path: '../fonts/';
 
-// bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
 
-//          rgb                   808movie  808.html909   codepen
+// Vars
+
+//         rgb                   808movie  808.html909   codepen
 $red:      rgba(252,79,59,1);   // FC4F3B    // ed400b // FD4D20
 $orange:   rgba(252,114,41,1);  // FC7229    // FF9600 // FE7F00
 $yellow:   rgba(252,22,47,1);   // FCDC2F    // FFE800 // FAEF1B
@@ -16,6 +15,18 @@ $darkgrey: rgba(48,46,47,1);    // 302E2F    // 353535 // 34302F
 .yellow   { color: $yellow; }
 .offwhite { color: $offwhite; }
 .darkgrey { color: $darkgrey; }
+
+
+// Bootrap overrides
+$body-bg: $darkgrey
+$font-family-base: "Roboto", sans-serif;
+$font-size-base: 16px;
+$line-height-base: 2em;
+$link-color: $red;
+
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
 
 
 .svg-fill {
