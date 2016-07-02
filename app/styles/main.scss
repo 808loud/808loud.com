@@ -59,41 +59,49 @@ body {
 }
 
 .nav-main {
+  clear: both;
   position: fixed;
-  right: 1em;
+  right: 0;
   white-space: nowrap;
   z-index: 30;
+
+  .navbar-toggler,
+  .nav-item,
+  div {
+    float: right;
+    clear: both;
+  }
 }
 
-@media screen and (max-width:767px) {
-  .nav-main {
-    nav {
-      ul li a {
-        /* animate movement */
-        position: relative;
-        right: -15px; // half button width
-        visibility: hidden;
-        opacity: 0;
-        z-index: 35;
-        &.mobile-show {
-          top: 0;
-          visibility: visible;
-          opacity: 1;
-          z-index: 50;
-        }
-      }
-      /* The "expanded" class is added to
-         the nav element with jQuery on click */
-      &.expanded li a {
-        top: 0;
-        visibility: visible;
-        opacity: 1;
-        -webkit-transition:
-          visibility 0.4s ease,
-          opacity 0.4s ease;
-        transition:
-          visibility 0.4s ease,
-          opacity 0.4s ease;
-      }
-    }
-  }
+// @media screen and (max-width:767px) {
+//   .nav-main {
+//     nav {
+//       ul li a {
+//         /* animate movement */
+//         position: relative;
+//         right: -15px; // half button width
+//         visibility: hidden;
+//         opacity: 0;
+//         z-index: 35;
+//         &.mobile-show {
+//           top: 0;
+//           visibility: visible;
+//           opacity: 1;
+//           z-index: 50;
+//         }
+//       }
+//       /* The "expanded" class is added to
+//          the nav element with jQuery on click */
+//       &.expanded li a {
+//         right: 1em\;
+//         visibility: visible;
+//         opacity: 1;
+//         -webkit-transition:
+//           visibility 0.4s ease,
+//           opacity 0.4s ease;
+//         transition:
+//           visibility 0.4s ease,
+//           opacity 0.4s ease;
+//       }
+//     }
+//   }

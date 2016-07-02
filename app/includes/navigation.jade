@@ -1,24 +1,30 @@
 //- includes/navigation.jade
-nav.nav-main
-  ul.nav.nav-pills.nav-stacked.list-inline.text-center.roboto-mono.bold
-    li.nav-item
-      a.nav-link.nav-link-primary.mobile-show.text-uppercase(href='#', role='button') 808 Loud
-    
-    li.nav-item
-      a.nav-link.mobile-show.toggle(role='button')
-        span.icon-hamburger
-          include ../images/hamburger.svg
-        span.icon-close.hidden
-          include ../images/close.svg
-          
-    li.nav-item
-      a.nav-link(href='#about', role='button') About
+nav.nav-main.navbar
+  button.navbar-toggler.hidden-sm-up(type="button" data-toggle="collapse" data-target="#nav_main")
+    span.icon-hamburger(aria-label='Menu')
+      include ../images/hamburger.svg
+    span.icon-close.hidden-xs-up(aria-label='Close')
+      include ../images/close.svg
+  .collapse.navbar-toggleable-xs#nav_main
+    ul.nav.navbar-nav.nav-pills.nav-stacked.list-inline.text-center.roboto-mono.bold
+      li.nav-item
+        a.nav-link.nav-link-primary.mobile-show.text-uppercase(href='#', role='button') 808 Loud
       
-    li.nav-item
-      a.nav-link(href='#work', role='button') Work
-      
-    li.nav-item
-      a.nav-link(href='#contact', role='button') Contact
-      
-    li.nav-item
-      a.nav-link(href='#808' role='button') Get loud
+      //- li.nav-item
+        a.nav-link.mobile-show.toggle(role='button')
+          span.icon-hamburger
+            include ../images/hamburger.svg
+          span.icon-close.hidden
+            include ../images/close.svg
+            
+      li.nav-item
+        a.nav-link(href='#about', role='button') About
+        
+      li.nav-item
+        a.nav-link(href='#work', role='button') Work
+        
+      li.nav-item
+        a.nav-link(href='#contact', role='button') Contact
+        
+      li.nav-item
+        a.nav-link(href='#808' role='button') Get loud
