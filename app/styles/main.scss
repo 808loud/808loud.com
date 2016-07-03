@@ -1,33 +1,10 @@
-$icon-font-path: '../fonts/';
+// $icon-font-path: '../fonts/';
 
-
-// Vars
-
-//         rgb                   808movie  808.html909   codepen
-$red:      rgba(252,79,59,1);   // FC4F3B    // ed400b // FD4D20
-$orange:   rgba(252,114,41,1);  // FC7229    // FF9600 // FE7F00
-$yellow:   rgba(252,22,47,1);   // FCDC2F    // FFE800 // FAEF1B
-$offwhite: rgba(244,244,244,1); // FEFEFE    // FFFBEB // F4F4D1
-$darkgrey: rgba(48,46,47,1);    // 302E2F    // 353535 // 34302F
-
-.red      { color: $red; }
-.orange   { color: $orange; }
-.yellow   { color: $yellow; }
-.offwhite { color: $offwhite; }
-.darkgrey { color: $darkgrey; }
-
-
-// Bootrap overrides
-$body-bg: $darkgrey
-$font-family-base: "Roboto", sans-serif;
-$font-size-base: 16px;
-$line-height-base: 2em;
-$link-color: $red;
+@import 'bootstrap-overrides';
 
 // bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
+@import 'bower_components/bootstrap/scss/bootstrap.scss';
 // endbower
-
 
 .svg-fill {
   fill: $offwhite;
@@ -36,14 +13,13 @@ $link-color: $red;
 .logo {
 
   svg {
-    background-color: $orange;
+    background-color: $offwhite;
     opacity: 1;
   }
   .svg-fill {
-    fill: $offwhite;
+    fill: $grey-dark;
   }
 }
-
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -52,30 +28,12 @@ $link-color: $red;
   padding: 0.2em 0;
 }
 
-.roboto {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-}
-
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-body {
-  background-color: $darkgrey;
-  color: $offwhite;
-}
-
 .nav-main {
   clear: both;
   position: fixed;
   right: 0;
-  white-space: nowrap;
-  z-index: 30;
 
+  // could probably refactor using bootstrap classes
   .navbar-toggler,
   .nav-item,
   div {
@@ -83,36 +41,3 @@ body {
     clear: both;
   }
 }
-
-// @media screen and (max-width:767px) {
-//   .nav-main {
-//     nav {
-//       ul li a {
-//         /* animate movement */
-//         position: relative;
-//         right: -15px; // half button width
-//         visibility: hidden;
-//         opacity: 0;
-//         z-index: 35;
-//         &.mobile-show {
-//           top: 0;
-//           visibility: visible;
-//           opacity: 1;
-//           z-index: 50;
-//         }
-//       }
-//       /* The "expanded" class is added to
-//          the nav element with jQuery on click */
-//       &.expanded li a {
-//         right: 1em\;
-//         visibility: visible;
-//         opacity: 1;
-//         -webkit-transition:
-//           visibility 0.4s ease,
-//           opacity 0.4s ease;
-//         transition:
-//           visibility 0.4s ease,
-//           opacity 0.4s ease;
-//       }
-//     }
-//   }

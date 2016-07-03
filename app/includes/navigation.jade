@@ -1,12 +1,12 @@
 //- includes/navigation.jade
-nav.nav-main.navbar
+nav.nav-main.nav.hidden-sm-up
   button.navbar-toggler.hidden-sm-up(type="button" data-toggle="collapse" data-target="#nav_main")
     span.icon-hamburger(aria-label='Menu')
       include ../images/hamburger.svg
     span.icon-close.hidden-xs-up(aria-label='Close')
       include ../images/close.svg
-  .collapse.navbar-toggleable-xs#nav_main
-    ul.nav.navbar-nav.nav-pills.nav-stacked.list-inline.text-center.roboto-mono.bold
+  .collapse.navbar-toggleable-sm#nav_main
+    ul.nav.nav-pills.text-uppercase.font-weight-bold.text-danger
       li.nav-item
         a.nav-link.nav-link-primary.mobile-show.text-uppercase(href='#', role='button') 808 Loud
       
