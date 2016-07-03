@@ -1,0 +1,19 @@
+- var title="Project Title"
+- var subtitle=""
+- var img_src=""
+- var a_href=""
+- var cta="See more"
+
+block meta
+
+
+.card
+  .card-block
+    h4.card-title #{title}
+    if subtitle
+      h6.card-subtitle #{subtitle}
+  img(src='#{img_src}', class="img-fluid" alt='Card image')
+  .card-block
+    p.card-text
+      block desc
+    a.btn.btn-primary(href='#{a_href}') #{cta}
