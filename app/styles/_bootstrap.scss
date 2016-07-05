@@ -22,12 +22,12 @@
 // Colors
 
 // 808 colors
-//          rgba                  808movie  808.html909   codepen
-$red:       rgba(252,79,59,1);   // FC4F3B    // ed400b // FD4D20
-$orange:    rgba(252,114,41,1);  // FC7229    // FF9600 // FE7F00
-$yellow:    rgba(252,22,47,1);   // FCDC2F    // FFE800 // FAEF1B
-$offwhite:  rgba(244,244,244,1); // FEFEFE    // FFFBEB // F4F4D1
-$grey-dark: rgba(48,46,47,1);    // 302E2F    // 353535 // 34302F
+//          html909    808movie       rgba                       codepen
+$red:       #ED400B; /* #FC4F3B */ /* rgba(252,79,59,1);   */ /* #FD4D20 */
+$orange:    #FF9600; /* #FC7229 */ /* rgba(252,114,41,1);  */ /* #FE7F00 */
+$yellow:    #FFE800; /* #FCDC2F */ /* rgba(252,22,47,1);   */ /* #FAEF1B */
+$offwhite:  #FFFBEB; /* #FEFEFE */ /* rgba(244,244,244,1); */ /* #F4F4D1 */
+$grey-dark: #353535; /* #302E2F */ /* rgba(48,46,47,1);    */ /* #34302F */
 
 // 808 color helper classes
 .red       { color: $red; }
@@ -43,7 +43,7 @@ $gray-lighter:  #eceeef;
 $gray-lightest: #f7f7f9;
 
 $brand-primary: $orange;
-$brand-success: $offwhite;
+$brand-success: $grey-dark;
 $brand-info:    $yellow;
 $brand-warning: $orange;
 $brand-danger:  $red;
@@ -94,8 +94,8 @@ $border-width:               1px;
 //
 // Settings for the `<body>` element.
 
-$body-bg: $grey-dark;
-$body-color: $offwhite;
+$body-bg: $offwhite;
+$body-color: $grey-dark;
 
 
 // Links

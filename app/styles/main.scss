@@ -14,11 +14,11 @@
 .logo {
 
   svg {
-    background-color: $offwhite;
+    background-color: $red;
     opacity: 1;
   }
   .svg-fill {
-    fill: $grey-dark;
+    fill: $offwhite;
   }
 }
 
@@ -29,16 +29,24 @@
   padding: 0.2em 0;
 }
 
+.font-family-monospace {
+  font-family: $font-family-monospace;
+}
+
 .nav-main {
-  clear: both;
+  // clear: both;
   position: fixed;
   right: 0;
 
-  // could probably refactor using bootstrap classes
-  .navbar-toggler,
-  .nav-item,
-  div {
-    float: right;
+  #nav_main {
     clear: both;
+    @include clearfix;
+    @include pull-right;
+    a {
+      padding-top: 0.75em;
+    }
+  }
+  a {
+    @extend #nav_main
   }
 }

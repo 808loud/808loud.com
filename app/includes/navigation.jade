@@ -1,30 +1,14 @@
 //- includes/navigation.jade
-nav.nav-main.nav.hidden-md-up
-  button.navbar-toggler.hidden-md-up(type="button" data-toggle="collapse" data-target="#nav_main")
+
+nav.nav-main.hidden-md-up.p-a-1
+  a.toggler.hidden-md-up(data-toggle="collapse" data-target="#nav_main" role="button")
     span.icon-hamburger(aria-label='Menu')
       include ../images/hamburger.svg
     span.icon-close.hidden-xs-up(aria-label='Close')
       include ../images/close.svg
-  .collapse.navbar-toggleable-md#nav_main
-    ul.nav.nav-pills.text-uppercase.font-weight-bold.text-danger
-      li.nav-item
-        a.nav-link.nav-link-primary.mobile-show.text-uppercase(href='#', role='button') 808 Loud
-      
-      //- li.nav-item
-        a.nav-link.mobile-show.toggle(role='button')
-          span.icon-hamburger
-            include ../images/hamburger.svg
-          span.icon-close.hidden
-            include ../images/close.svg
-            
-      li.nav-item
-        a.nav-link(href='#about', role='button') About
-        
-      li.nav-item
-        a.nav-link(href='#work', role='button') Work
-        
-      li.nav-item
-        a.nav-link(href='#contact', role='button') Contact
-        
-      li.nav-item
-        a.nav-link(href='#808' role='button') Get loud
+  #nav_main.collapse.navbar-toggleable-md.pull-md-right.nav.text-xs-right.text-primary.text-uppercase.font-weight-bold
+    a.nav-item.nav-link(href='#', role='button') 808 Loud
+    a.nav-item.nav-link(href='#about', role='button') About
+    a.nav-item.nav-link(href='#work', role='button') Work
+    a.nav-item.nav-link(href='#contact', role='button') Contact
+    a.nav-item.nav-link(href='#808' role='button') Get loud

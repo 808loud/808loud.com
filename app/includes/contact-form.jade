@@ -2,13 +2,17 @@
 
 h1#contact Contact
 
-form.font-family-monospace
+form#form-contact(action='//formspree.io/info@808loud.com' method='POST')
   .form-group
     label.sr-only(for='name') Name
-    input.form-control#name(type='email' placeholder='Name')
+    input.form-control#name(name='Name' type='text' placeholder='Name')
   .form-group
     label.sr-only(for='email') Email
-    input.form-control#email(type='email' placeholder='Email address')
+    input.form-control#email(name='email' type='email' placeholder='Email address')
+  input(name='_subject' value='Your message to 808 Loud' type='hidden')
+  //- input.hidden-xs-up(name='_gotcha' type='text')
+  //- input(name='_format' value='plain' type='hidden')
   .form-group
     label.sr-only(for='message') Message
-    textarea.form-control#message(placeholder='Message')
+    textarea.form-control#message(name='Message' placeholder='Message')
+  input.btn.btn-primary(type='submit', value='Send')
