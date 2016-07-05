@@ -1,0 +1,14 @@
+//- contact-form.jade
+
+h1#contact Contact
+
+form.font-family-monospace
+  .form-group
+    label.sr-only(for='name') Name
+    input.form-control#name(type='email' placeholder='Name')
+  .form-group
+    label.sr-only(for='email') Email
+    input.form-control#email(type='email' placeholder='Email address')
+  .form-group
+    label.sr-only(for='message') Message
+    textarea.form-control#message(placeholder='Message')
