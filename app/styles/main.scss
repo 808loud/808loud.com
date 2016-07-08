@@ -50,3 +50,13 @@
     @extend #nav_main
   }
 }
+
+.animate {
+  .zoom {
+   transform: scale(1);
+   transition: 0.3s ease-in-out;
+  }
+  &:hover .zoom {
+  	transform: scale(1.135);
+  }
+}

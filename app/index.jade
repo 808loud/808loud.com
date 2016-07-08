@@ -13,12 +13,16 @@ block content
       p 1 2 #[a(href='#') 3] 4 5
           
     section#work
+      h1 Work samples
+      //- make this flexbox! bootstrap grid!
       .card-deck
-        include projects/ex0.jade
-        include projects/ex1.jade
+        include projects/charlie-portfolio
+        include projects/ex1
       .card-deck
-        include projects/ex2.jade
-        include projects/ex3.jade
+        include projects/msp-mag
+        include projects/xolve
+        //- DFS, Northern Brewer, BMTN, define simple, Intermix, McKennson?
+      
         
     section#contact-form
       include includes/contact-form

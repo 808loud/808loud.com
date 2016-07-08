@@ -1,19 +1,20 @@
-- var title="Project Title"
-- var subtitle=""
-- var img_src=""
-- var a_href=""
-- var cta="See more"
+- var title='Project Title'
+- var subtitle=''
+- var img_src=''
+- var img_alt=''
+- var a_href=''
+- var cta='Visit site'
 
 block meta
 
 
-.card
-  .card-block
+.card.animate
+  //- .card-block
     h4.card-title #{title}
     if subtitle
       h6.card-subtitle #{subtitle}
-  img.img-fluid(src='#{img_src}', alt='Card image')
+  img.img-fluid.p-a-1.zoom(src='#{img_src}' alt='#{title}')
   .card-block
     p.card-text
       block desc
-    a.btn.btn-primary(href='#{a_href}') #{cta}
+    a.btn.btn-primary(href='#{a_href}' target='_blank') #{cta}
