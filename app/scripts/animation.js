@@ -6,7 +6,7 @@ $window.on('scroll', animateOnScroll);
 
 function animateOnScroll() {
   var scrolled = $window.scrollTop();
-  $(".animated-scroll:not(.animated)").each(function () {
+  $('.animated-scroll:not(.animated)').each(function () {
     var $this     = $(this);
     var offsetTop = $this.offset().top;
 

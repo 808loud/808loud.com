@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.2",
-    "modernizr": "^3.3.1"
+    "modernizr": "^3.3.1",
+    "animate.css": "^3.5.2",
+    "octicons": "^4.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

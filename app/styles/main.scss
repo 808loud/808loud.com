@@ -8,18 +8,43 @@
 // endbower
 
 .svg-fill {
-  fill: $offwhite;
+  fill: $gray-dark;
+}
+
+.svg-bg {
+  // optional
+}
+
+section {
+  // @extend .m-b-3;
+  margin-bottom: 6rem;
 }
 
 .logo {
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: -1;
 
   svg {
-    background-color: $red;
-    opacity: 1;
+    display: block;
+    fill: currentColor;
+
+    .bg {
+      fill: $offwhite;
+    }
+
+    .color {
+      fill: $offwhite;
+      animation: fadeLogo 6s ease-in 1s forwards 1;
+    }
   }
-  .svg-fill {
-    fill: $offwhite;
-  }
+}
+
+@keyframes fadeLogo {
+  from { fill: $offwhite; }
+  to   { fill: darken($offwhite, 12%); }
 }
 
 .browserupgrade {
@@ -51,7 +76,7 @@
   }
 }
 
-.animate {
+.animated-hover-parent {
   .zoom {
    transform: scale(1);
    transition: 0.3s ease-in-out;

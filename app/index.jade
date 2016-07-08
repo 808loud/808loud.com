@@ -8,9 +8,10 @@ block content
   .container
   
     section#about
-      h1.text-danger.text-uppercase.font-weight-bold 808 Loud
-      h3.text-muted Web design and development
-      p 1 2 #[a(href='#') 3] 4 5
+      .jumbotron.text-xs-center.m-y-3
+        h1.display-1.text-danger.text-uppercase.font-weight-bold.animated.fadeInDownBig 808 Loud
+        h3.text-muted.
+          Web design and development for rockstars
           
     section#work
       h1 Work samples
@@ -22,7 +23,12 @@ block content
         include projects/msp-mag
         include projects/xolve
         //- DFS, Northern Brewer, BMTN, define simple, Intermix, McKennson?
-      
+    
+    section#quotes
+      span.mega-octicon.octicon-quote.animated.animated-scroll.bounce
+      blockquote
+        p Cool quotes goes here.
+        footer Some important dude  
         
     section#contact-form
       include includes/contact-form
