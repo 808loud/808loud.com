@@ -1,0 +1,1 @@
+"use strict";$(".nav-main .toggler").on("click",function(n){$(".nav-main .toggler > span").toggleClass("hidden-xs-up"),n.preventDefault()}),$(".nav-main ul li a").not(".nav-main .toggler").on("click",function(){$(".nav-main .toggler .icon-hamburger").removeClass("hidden-xs-up"),$(".nav-main .toggler .icon-close").addClass("hidden-xs-up")});
