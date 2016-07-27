@@ -4,3 +4,13 @@ mixin list(classes, ...items)
   ul.classes
     each item in items
       li= item
+      
+mixin octicon(icon, width, height)
+  //- set default width and height
+  //- NOTE I can't wait for ES6 support in Jade/Pug
+  - width  = typeof width  != "undefined" ? width  : '16'
+  - height = typeof height != "undefined" ? height : '16'
+  svg(width='#{width}' height='#{height}')
+    //- first pound sign is for fragment identifier
+    //- second pound sign to reference mixin argument
+    use(xlink:href='##{icon}')

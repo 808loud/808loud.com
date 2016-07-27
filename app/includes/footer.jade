@@ -1,41 +1,45 @@
-footer.bg-success.m-t-3.p-y-3
+footer#footer.bg-success.m-t-3.p-y-3
   .container.text-primary
     .row
-      .col-sm-4
-        span.mega-octicon.octicon-quote
+      .col-sm-4.wow
+        //- <svg width="20" height="20"><use xlink:href="#octicon-quote"/></svg>
+        //- svg(width='30' height='30')
+        //-   use(xlink:href='#quote')
+        //- +octicon('location', 40, 40)
+        +octicon('quote', 32, 32)
         blockquote
           p Cool quote goes here.
           footer.blockquote-footer Some important dude
       .col-sm-4
-        span.mega-octicon.octicon-location
+        +octicon('location', 32, 32)
         address
           //- | 2151 Midlothian Road<br>
           | St. Paul, MN<br>
           a(href='tel:612.465.9808')
             abbr(title='Phone') p
             | .612.465.9808
-        span.mega-octicon.octicon-mail
+        +octicon('mail', 32, 32)
         p.
           <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'&'+'#'+'1'+'0'+'9'+';'+'&'+'#'+'9'+'7'+';'+'i'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'9'+'n'+'&'+'#'+'1'+'0'+'2'+';'+'%'+'6'+'F'+'&'+'#'+'6'+'4'+';'+'8'+'%'+'&'+'#'+'5'+'1'+';'+'0'+'&'+'#'+'5'+'6'+';'+'&'+'#'+'1'+'0'+'8'+';'+'o'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'5'+';'+'5'+'&'+'#'+'3'+'7'+';'+'6'+'4'+'&'+'#'+'4'+'6'+';'+'c'+'o'+'m'+"'"+'>'+'i'+'&'+'#'+'1'+'1'+'0'+';'+'&'+'#'+'1'+'0'+'2'+';'+'o'+'&'+'#'+'6'+'4'+';'+'8'+'&'+'#'+'4'+'8'+';'+'8'+'l'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'1'+'1'+'7'+';'+'&'+'#'+'1'+'0'+'0'+';'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'1'+'0'+'9'+';'+'<'+'/'+'a'+'>');</script><noscript></noscript>
       .col-sm-4
         span.mega-octicon.octicon-tools
         ul.list-unstyled
           li 
-            span.octicon.octicon-code
+            +octicon('code')
             | Templatized with Jade
           li
-            span.octicon.octicon-bold
+            +octicon('bold')
             | Styled with Bootstrap
           li
-            span.octicon.octicon-squirrel
+            +octicon('squirrel')
             | Deployed with Gulp
           li 
-            span.octicon.octicon-octoface
+            +octicon('octoface')
             | Source control on GitHub
           li
-            span.octicon.octicon-mark-github
+            +octicon('mark-github')
             | Hosted on GitHub Pages
           li 
-            span.octicon.octicon-heart
+            +octicon('heart')
             | Hand-coded with love
       
