@@ -5,14 +5,12 @@
     <g class="left">
       <circle cx="8" cy="5" r="4"/>
       <circle cx="8" cy="15" r="4"/>
-      <polygon points="15,2 16,0 17,2" transform="rotate(180 16 1)" class="top"/>
       <polygon points="1,9 2,11 0,11" transform="rotate(90 1 10)"/>
     </g>
     <ellipse cx="24" cy="10" rx="4" ry="8"/>
     <g class="right" transform="translate(31 0)">
       <circle cx="9" cy="5" r="4"/>
       <circle cx="9" cy="15" r="4"/>
-      <polygon points="1,0 2,2 0,2" transform="rotate(180 1 1)" class="top"/>
       <polygon points="16,9 17,11 15,11" transform="rotate(270 16 10)"/>
     </g>
   </g>

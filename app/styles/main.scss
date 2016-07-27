@@ -20,7 +20,7 @@ section {
 
 .logo {
   position: fixed;
-  top:0;
+  top:center;
   left:0;
   right: 0;
   z-index: -1;
@@ -42,7 +42,7 @@ section {
 
 @keyframes fadeLogo {
   from { fill: $offwhite; }
-  to   { fill: darken($offwhite, 12%); }
+  to   { fill: darken($offwhite, 6%); }
 }
 
 .browserupgrade {
