@@ -9,26 +9,26 @@ block content
   
     section#about
       .jumbotron.text-xs-center.m-y-3
-        h1.display-1.text-danger.text-uppercase.font-weight-bold(data-animation='flipInX')
+        h1.display-1.text-danger.text-uppercase.font-weight-bold.wow.flipInX
           | 808 Loud
-        h3.text-muted.animated(data-animation='fadeInDownBig' data-animation-delay='300')
+        h3.text-muted.animated.wow.fadeInDownBig(data-wow-delay='300')
           | Web design and development.
-        h4.text-muted.animated(data-animation='fadeInDown' data-animation-delay='600')
+        h4.text-muted.animated.wow.fadeInDown(data-wow-delay='600')
           | For rockstars. By rockstars.
           
     section#work
       h1 Work samples
-      //- make # of cards in a row responsive! bootstrap grid!
+      //- TODO make # of cards in a row responsive! bootstrap grid!
       .card-deck
         include projects/charlie-portfolio
         include projects/ex1
       .card-deck
         include projects/msp-mag
         include projects/xolve
-        //- DFS, Northern Brewer, BMTN, define simple, Intermix, McKennson?
+        //- TODO add DFS, Northern Brewer, BMTN, define simple, Intermix, McKennson?
     
     section#quotes
-      span.mega-octicon.octicon-quote.animated.animated-scroll.bounce
+      +octicon('quote', 50, 50)
       blockquote
         p Cool quotes goes here.
         footer.blockquote-footer Some important dude  
