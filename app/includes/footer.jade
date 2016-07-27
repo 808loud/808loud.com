@@ -1,7 +1,7 @@
 footer#footer.bg-success.m-t-3.p-y-3
   .container.text-primary
     .row
-      .col-sm-4
+      .col-sm-4.wow.fadeInLeft
         //- <svg width="20" height="20"><use xlink:href="#octicon-quote"/></svg>
         //- svg(width='30' height='30')
         //-   use(xlink:href='#quote')
@@ -10,7 +10,8 @@ footer#footer.bg-success.m-t-3.p-y-3
         blockquote
           p Cool quote goes here.
           footer.blockquote-footer Some important dude
-      .col-sm-4
+          
+      .col-sm-4.wow.fadeInLeft(data-wow-delay='0.3s')
         +octicon('location', 32, 32)
         address
           //- | 2151 Midlothian Road<br>
@@ -21,7 +22,8 @@ footer#footer.bg-success.m-t-3.p-y-3
         +octicon('mail', 32, 32)
         p.
           <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'&'+'#'+'1'+'0'+'9'+';'+'&'+'#'+'9'+'7'+';'+'i'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'9'+'n'+'&'+'#'+'1'+'0'+'2'+';'+'%'+'6'+'F'+'&'+'#'+'6'+'4'+';'+'8'+'%'+'&'+'#'+'5'+'1'+';'+'0'+'&'+'#'+'5'+'6'+';'+'&'+'#'+'1'+'0'+'8'+';'+'o'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'5'+';'+'5'+'&'+'#'+'3'+'7'+';'+'6'+'4'+'&'+'#'+'4'+'6'+';'+'c'+'o'+'m'+"'"+'>'+'i'+'&'+'#'+'1'+'1'+'0'+';'+'&'+'#'+'1'+'0'+'2'+';'+'o'+'&'+'#'+'6'+'4'+';'+'8'+'&'+'#'+'4'+'8'+';'+'8'+'l'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'1'+'1'+'7'+';'+'&'+'#'+'1'+'0'+'0'+';'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'1'+'0'+'9'+';'+'<'+'/'+'a'+'>');</script><noscript></noscript>
-      .col-sm-4
+      
+      .col-sm-4.wow.fadeInLeft(data-wow-delay='0.6s')
         span.mega-octicon.octicon-tools
         ul.list-unstyled
           li 
