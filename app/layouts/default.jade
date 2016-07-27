@@ -1,6 +1,27 @@
 doctype html
 html.no-js
-  include ../includes/head.jade
+  head
+    meta(charset='utf-8')
+    title 808 Loud &bull; Web design and development. Get loud.
+    meta(name='description' content='')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon' href='apple-touch-icon.png')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+
+    link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700')
+    link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700')
+
+    // build:css styles/vendor.css
+    // bower:css
+    //- link(rel='stylesheet' href='bower_components/octicons/build/font/octicons.css')
+    link(rel='stylesheet' href='bower_components/animate.css/animate.css')
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel='stylesheet' href='styles/main.css')
+    // endbuild
+
 
   body(data-spy='scroll' data-target='nav-main')
     | <!--[if lt IE 10]>
@@ -14,4 +35,29 @@ html.no-js
 
     include ../includes/footer.jade
 
-    include ../includes/scripts.jade
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //- script.
+    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //-   e.src='//www.google-analytics.com/analytics.js';
+    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //-   ga('create','UA-XXXXX-X');ga('send','pageview');
+
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='../bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+
+    // build:js scripts/plugins.js
+    //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')
+    // endbuild
+
+    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+
+    script(src='scripts/formspree.js')
+
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
