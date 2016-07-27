@@ -20,6 +20,13 @@ html.no-js
     // build:css styles/main.css
     link(rel='stylesheet' href='styles/main.css')
     // endbuild
+    
+    // build:js scripts/wow.js
+    script(src='/bower_components/wow/dist/wow.js')
+    // endbuild
+    
+    script.
+      new WOW().init();
 
 
   body(data-spy='scroll' data-target='nav-main')
@@ -52,18 +59,8 @@ html.no-js
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
-    script(src='/bower_components/wow/dist/wow.js')
     // endbower
     // endbuild
-    
-    script.
-      new WOW().init();
-
-    // build:js scripts/plugins.js
-    //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')
-    // endbuild
-
-    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
 
     script(src='scripts/formspree.js')
 
