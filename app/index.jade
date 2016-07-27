@@ -3,19 +3,22 @@ extends layouts/default
 block content
 
   .logo
-    include images/808-reversed-cropped.svg
+    include images/808-reversed-bleed.svg
 
   .container
   
     section#about
       .jumbotron.text-xs-center.m-y-3
-        h1.display-1.text-danger.text-uppercase.font-weight-bold.animated.fadeInDownBig 808 Loud
-        h3.text-muted.
-          Web design and development for rockstars
+        h1.display-1.text-danger.text-uppercase.font-weight-bold(data-animation='flipInX')
+          | 808 Loud
+        h3.text-muted.animated(data-animation='fadeInDownBig' data-animation-delay='300')
+          | Web design and development.
+        h4.text-muted.animated(data-animation='fadeInDown' data-animation-delay='600')
+          | For rockstars. By rockstars.
           
     section#work
       h1 Work samples
-      //- make this flexbox! bootstrap grid!
+      //- make # of cards in a row responsive! bootstrap grid!
       .card-deck
         include projects/charlie-portfolio
         include projects/ex1
@@ -28,7 +31,7 @@ block content
       span.mega-octicon.octicon-quote.animated.animated-scroll.bounce
       blockquote
         p Cool quotes goes here.
-        footer Some important dude  
+        footer.blockquote-footer Some important dude  
         
     section#contact-form
       include includes/contact-form

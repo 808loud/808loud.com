@@ -1,24 +1,30 @@
-var $window           = $(window);
-var win_height_padded = $window.height() * 1.1;
-var isTouch           = Modernizr.touch;
+$(document).ready(function() {
 
-$window.on('scroll', animateOnScroll);
+  // TODO fix this. http://marketblog.envato.com/learn-something-new/triggering-css-animations-scroll/
 
-function animateOnScroll() {
-  var scrolled = $window.scrollTop();
-  $('.animated-scroll:not(.animated)').each(function () {
-    var $this     = $(this);
-    var offsetTop = $this.offset().top;
+  var $window           = $(window);
+  var win_height_padded = $window.height() * 1.1;
+  var isTouch           = Modernizr.touch;
 
-    if (scrolled + win_height_padded > offsetTop) {
-      if ($this.data('timeout')) {
-        window.setTimeout(function(){
+  $window.on('scroll', animateOnScroll);
+
+  function animateOnScroll() {
+    var scrolled = $window.scrollTop();
+    $('.animated-scroll:not(.animated)').each(function () {
+      var $this     = $(this);
+      var offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('animation-delay')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          },
+          parseInt($this.data('animation-delay'),10));
+        } else {
           $this.addClass('animated ' + $this.data('animation'));
-        },
-        parseInt($this.data('timeout'),10));
-      } else {
-        $this.addClass('animated ' + $this.data('animation'));
+        }
       }
-    }
-  });
-};
+    });
+  };
+
+});

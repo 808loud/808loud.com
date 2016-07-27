@@ -2,7 +2,9 @@
 @import 'bootstrap';
 
 // bower:scss
+@import 'bower_components/octicons/index.scss';
 @import 'bower_components/bootstrap/scss/bootstrap.scss';
+
 // endbower
 
 .svg-fill {
@@ -57,7 +59,7 @@ section {
 }
 
 .nav-main {
-  // clear: both;
+  clear: both;
   position: fixed;
   right: 0;
 
@@ -72,6 +74,11 @@ section {
   a {
     @extend #nav_main
   }
+}
+
+// justify text in footer
+footer li .octicon {
+  width: 22px;
 }
 
 .animated-hover-parent {

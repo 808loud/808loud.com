@@ -1,3 +1,5 @@
+// TODO wrap in doc ready
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 $('.nav-main .toggler').on('click', function(e) {
 	$('.nav-main .toggler > span').toggleClass('hidden-xs-up');
